@@ -63,7 +63,7 @@ public class Sheet extends JTable {
                 }
                 String add=(c / 26 < 1 ? "" : Character.valueOf((char) (c / 26 + 64)).toString()) + Character.valueOf((char) (c % 26 + 65)).toString() + (r + 1);
                 book.getContainer().getFormulaBar().setText(getSheetModel().getFormularBarText(r, c));
-                book.getContainer().getBarCaption().setText("Formula at " + name + ":" + add + " is: ");
+                book.getContainer().getBarCaption().setText("Formula at Book:" + name + ":" + add + " is: ");
             
                 TableCellEditor tce = getCellEditor();
 
