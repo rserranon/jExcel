@@ -38,6 +38,8 @@ public class Sheet extends JTable {
         brush="";
         this.setDefaultRenderer(Object.class, new myCellModel(book.getContainer().getFormulaBar()));
         setCellSelectionEnabled(true);
+        this.setGridColor(Color.LIGHT_GRAY)
+        this.setShowGrid(true);
         Cell foo[][];
         foo = new Cell[numRow][numColumn];
         for (int ii = 0; ii < numRow; ii++) {
